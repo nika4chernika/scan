@@ -1,0 +1,306 @@
+.main {
+    margin-top: 69px;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.manrocket, 
+.folders,
+.doc {
+    position: absolute;
+    background-size: 100%;
+}
+
+.manrocket {
+    width: 442.573px;
+    height: 470.214px;
+    bottom: 0;
+    right: -60px;
+}
+
+.folders {
+    width: 140.608px;
+    height: 68.394px;
+    top: 81px;
+    right: 44.39px;
+}
+
+.doc {
+    width: 91px;
+    height: 111.118px;
+    top: 63px;
+    right: 351px;
+
+}
+
+.title {
+    margin-bottom: 25px;
+    width: 700px;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+}
+
+.text {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+
+.form {
+    margin-top: 47px;
+    padding: 21px 0px 32px 44px;
+    width: 872px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.note {
+    font-size: 25px;
+}
+
+.label, 
+.input {
+    display: block;
+}
+
+.inn_error,
+.date_error,
+.amount_error {
+    color: #FF5959;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    position: absolute;   
+}
+
+.inn_error {
+    top: 130px;
+    left: 63px;
+}
+
+.date_error {
+    top: 515px;
+    left: 140px;
+}
+
+.amount_error {
+    top: 368px;
+    left: 98px;
+}
+
+.input_inn_invalid:point,
+.input_inn_invalid:not(:point),
+.input_amount_invalid:point,
+.input_amount_invalid:not(:point),
+.input_date_invalid:not(:point),
+.input_date_invalid:point {
+    border: 1px solid #FF5959;
+    box-shadow: 0px 0px 20px 0px rgba(255, 89, 89, 0.20);
+    color: #FF5959;
+}
+
+.label,
+.check_info {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    margin-bottom: 20px;
+}
+
+.input, 
+.select {
+    margin-bottom: 30px;
+    padding: 13px 22px;
+    width: 242px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    border-radius: 5px;
+    border: 1px solid #C7C7C7;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input::placeholder, 
+.input_date::placeholder {
+    color: rgba(3, 3, 3, 0.4);
+    text-align: center;
+}
+
+.label_date {
+    margin-top: 39px;
+    margin-right: 20px;
+}
+
+.input_date {
+    display: inline-block;
+    width: 176px;
+    margin-right: 20px;
+    background-position: 146px center;
+    background: no-repeat 90% center;
+}
+
+.select {
+    -moz-appearance: none; 
+    -webkit-appearance: none;
+    appearance: none;
+    background-position: 207px center;
+    background: no-repeat 90% center;
+
+}
+
+
+/* чекбокс */
+.form_right {
+    width: 410px;
+}
+
+
+.check_label {
+    display: inline-block;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.check_input, 
+.check_input_active {
+    vertical-align: middle;
+    margin-right: 17px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+    cursor: pointer;
+}
+
+.check_input_active {
+    border: 1px solid #000;
+}
+
+.check_text_active {
+    vertical-align: middle;
+    color: #000;
+}
+
+.check_text {
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mark_checked {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.mark_not_checked {
+    display: none;
+}
+
+
+/* кнопки */
+.btn {
+    margin-top: 145px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: calc(100% - 39px);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.66px; 
+    border-radius: 5px;
+    color: #fff;
+    background-color: #5970FF;
+}
+
+.btn:disabled {
+    background-color: #596fff8c;
+}
+
+.note_text {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    color: #949494;
+}
+
+.note_text sup {
+    font-size: 14px;
+}
+
+
+/* адаптация */
+@media screen and (max-width: 1170px) {
+    .doc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .folders {
+        display: none;
+    }
+
+    .doc {
+        display: block;
+        width: 58.242px;
+        height: 71.118px;
+        top: 97px;
+        right: 0;
+    }
+
+    .manrocket {
+        position: absolute;
+        right: -25px;
+        bottom: -25px; /* Установите отступ в зависимости от высоты вашего футера */
+        z-index: 2px
+       
+    }
+
+    .main {
+        margin-top: 29px;
+        margin-bottom: 25px;
+        height: 1370px;
+    }
+
+    .title {
+        margin-bottom: 19px;
+        font-size: 28px;
+        letter-spacing: 0.28px;
+        width: 361px;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 297px;
+    }
+
+    .form {
+        margin-top: 21px;
+        margin-left: -14px;
+        margin-right: -26px;
+        margin-bottom: 25px;
+        padding: 24px 26px 37px 14px;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% + 38px);
+    }
+
+    .label {
+        letter-spacing: 0.36px;
+    }
+
+    .label_date {
+        margin-top: 30px;
+    }
+}

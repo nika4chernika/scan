@@ -1,0 +1,284 @@
+.header {
+    background-color: #fff;
+    position: relative;
+    margin-left: -60px;
+    margin-right: -60px;
+}
+
+.header_container {
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 141px;
+    height: 100%;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none; 
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 49px;
+}
+
+.nav_link, 
+.registration, 
+.in_btn {
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    text-decoration: none;
+}
+
+.nav_link {
+    color: #000;
+}
+
+.nav_link:hover {
+    color: #000000b2;
+}
+
+.registration {
+    padding-right: 18px;
+    margin-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-right: 2px solid rgba(2, 148, 145, 0.6);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.registration:hover, .user_btn:hover {
+    color: #000;
+}
+
+.in_btn {
+    font-weight: 500;
+    background-color: #7CE3E1;
+    border-radius: 5px;
+    padding: 4px 10px 5px 12px;
+    cursor: pointer;
+    color: #000;
+}
+
+.in_btn:hover {
+    background-color: #a9e3e2;
+}
+
+.signed {
+    display: flex;
+}
+
+.rectangle {
+    width: 175px;
+    margin-right: 128px;
+    text-align: justify;
+    display: flex;
+    padding: 12px 8px 15px 10px;
+    background-color: rgba(217, 217, 217, 0.3);
+    border-radius: 5px;
+    position: relative
+}
+
+.rectangle_background {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 25%;
+    left: 45%;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.rectangle_text {
+    margin-top: 2px;
+    text-align: right;
+    margin-right: 9px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.4);
+}  
+
+.rectangle_text:first-child {
+    margin-bottom: 7px;
+}
+
+.rectangle_number,
+.rectangle_number_black {
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.rectangle_number:last-child {
+    margin-top: 2px;
+    color: #8AC540;
+}
+
+.user {
+    display: flex;
+    margin-top: 10px;
+    text-align: right;
+    justify-content: flex-end; 
+
+}
+
+.user_name {
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.user_left {
+    margin-right: 5px;
+}
+
+.out_btn {
+    background-color: transparent;
+    font-size: 10px;
+    color: rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.userpic {
+    height: 32px;
+    border-radius: 50%;
+}
+
+.stripes_logo {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hidden_menu {
+    display: none;
+    margin-left: -60xp;
+    width: 100%;
+    background-color: #029491;
+    top: 93px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.hidden_nav {
+    margin-top: 70px;
+    margin-bottom: 75px;
+}
+
+.hidden_item {
+    margin-bottom: 26px;
+}
+
+.hidden_link {
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+}
+
+.hidden_registration {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20.5px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    letter-spacing: 0.16px;
+}
+
+.hidden_btn {
+    margin-bottom: 77.5px;
+    padding: 15.8px 117px 12.1px 117px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    border-radius: 5px;
+    background: #7CE3E1;
+}
+
+
+/* адаптация */
+@media screen and (max-width: 1000px) {
+    .hidden_menu {
+        display: block;
+    }
+
+    .logo {
+        width: 111px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .rectangle {
+        margin-top: 5px;
+        margin-left: 31px;
+        margin-right: 31px;
+        padding: 5px 25px 5px 10px;
+        width: 132px;
+        display: block;
+    }
+
+    .rectangle_text {
+        text-align: left;
+        font-size: 8px;
+        margin-right: 0;
+    }
+
+    .rectangle_number,
+    .rectangle_number_black {
+        margin-top: 0;
+    }
+
+    .rectangle_number_black {
+        color: #000;
+    }
+
+    .rectangle_top {
+        margin-bottom: 7px;
+    }
+
+    .rectangle_loading {
+        width: 132px;
+        height: 75px;
+    }
+
+    .user {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        margin-left: -14px;
+        margin-right: -26px;
+    }
+
+    .header_container {
+        margin-left: 14px;
+        margin-right: 26px;
+    }
+}

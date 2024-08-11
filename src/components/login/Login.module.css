@@ -1,0 +1,273 @@
+.main {
+    margin-bottom: 80px;
+    padding-top: 69px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.personskey {
+    position: absolute;
+    width: 321.764px;
+    height: 342.035px;
+    bottom: 0;
+    left: 112px;
+}
+
+.lock {
+    position: absolute;
+    width: 75.219px;
+    height: 92.065px;
+    top: 14px;
+    right: 485.78px;
+}
+
+.title {
+    display: inline-block;
+    max-width: 800px;
+    font-size: 40px;
+    letter-spacing: 0.8px;
+}
+
+.form {
+    margin-right: 81px;
+    padding: 25px 0px 39px 25px;
+    width: 429px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.link_login,
+.link_registration {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    border-bottom: 2px solid;
+    font-family: "Inter-Regular", Helvetica;
+    text-decoration: none;
+}  
+
+.link_login {
+    margin-right: 15px;
+    padding-left: 51px;
+    padding-right: 51px;
+    color: #029491;
+}
+
+.link_registration {
+    padding-left: 21.5px;
+    padding-right: 21.5px;
+    color: #C7C7C7;
+}
+
+.link_registration:hover {
+    color: #52a6a58c;
+}
+
+.input, 
+.label {
+    display: block;
+    font-family: "Inter-Regular", Helvetica;
+    text-decoration: none;
+}
+
+.label {
+   margin-bottom: 15px; 
+   color: #949494;
+   font-size: 16px;
+   letter-spacing: 0.32px;
+}
+
+.input {
+    margin-bottom: 20px;
+    padding-left: 19px;
+    width: calc(100% - 25px);
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid #C7C7C7;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+}
+
+.in_btn {
+    margin-top: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 5px;
+    width: calc(100% - 25px);
+    display: block;
+    background-color: #5970FF;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.44px;
+    cursor: pointer;
+}
+
+.in_btn:disabled {
+    background-color: #596fff85;
+    cursor: auto;
+}
+
+.password {
+    margin-top: 15px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    text-decoration: underline;
+    color: #5970FF;
+    font-family: "Inter-Regular", Helvetica;
+}
+
+.password:hover {
+    color: #3a54fe98;
+    font-family: "Inter-Regular", Helvetica;
+}
+
+.text {
+    color: #949494;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    font-family: "Inter-Regular", Helvetica;
+}
+
+.goofaceya_logo {
+    width: 96px;
+    height: 31px;
+    margin-right: 10px;
+}
+
+.goofaceya_logo:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.login_error,
+.password_error {
+    color: #FF5959;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    position: absolute;
+    display: none;
+}
+
+.login_error {
+   top: 177px;
+   left: 113px; 
+}
+
+.password_error {
+    top: 274px;
+    left: 100px; 
+}
+
+
+/* адаптация */
+
+@media screen and (max-width: 1170px) {
+    .main {
+        height: 1250px;
+        padding-top: 31px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .personskey {
+        width: 335px;
+        height: 356.105px;
+        left: 30%;
+    }
+
+    .title {
+        margin-bottom: 126px;
+        margin-left: 10px;
+        font-size: 22px;
+        letter-spacing: 0.44px;
+        width: 345px;
+    }
+
+    .lock {
+        top: 180px;
+        left: 40%;
+    }
+
+    .form {
+        margin-right: 0;
+        width: 335px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+
+    .link_login,
+    .link_registration {
+        padding-bottom: 10px;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+    }
+    
+    .link_login {
+        margin-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .link_registration {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .label {
+        font-size: 14px;
+        letter-spacing: 0.28px;
+    }
+
+    .login_error,
+    .password_error {
+        font-size: 12px;
+        letter-spacing: 0.12px;
+    }
+
+    .login_error {
+        left: 81px;
+        top: 174px;
+    }
+
+    .password_error {
+        left: 60px;
+        top: 269px;
+    }
+
+    .in_btn {
+        font-size: 20px;
+        letter-spacing: 0.4px;
+    }
+
+    .goofaceya_logo {
+        margin-right: 0;
+    }
+
+    .goofaceya:first-child {
+        margin-right: 9px;
+    }
+
+    .goofaceya:nth-child(2) {
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .lock {
+        left: 25%;
+    }
+
+    .personskey {
+        left: 0;
+    }
+}

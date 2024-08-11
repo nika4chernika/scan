@@ -1,0 +1,169 @@
+/* tariff */
+.tariff {
+    margin-top: 107px;
+    align-items: center;
+}
+
+.tariff_title {
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 0.45px;
+    margin-left: 60px;
+
+}
+
+.tariff_list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tariff_item {
+    width: 415px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    list-style-type: none;
+
+}
+
+.tariff_item_header {
+    position: relative;
+    height: 132px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+.tariff_background_logo {
+    position: absolute;
+    background-size: 100%;
+    top: 0;
+    right: 0;
+}
+
+.tariff_item_title {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+.tariff_item_text {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+}
+
+.tariff_main {
+    padding: 33px 0px 24px 30px;
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.tariff_current {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    padding: 3px 13px 4px 13px;
+    border-radius: 10px;
+    background-color: #3BA5E0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+}
+
+.tariff_special_price, 
+.tariff_price {
+    display: inline-block;
+}
+
+.tariff_special_price {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-right: 19px;
+}
+
+.tariff_price {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .5);
+}
+
+.tariff_credit {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    margin-top: 13px;
+    
+}
+
+.tariff_cheks_title {
+    margin-top: 59px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  
+}
+
+.tariff_cheks {
+    margin-bottom: 5px;
+    padding-left: 28px;
+    font-size: 18px;
+    letter-spacing: 0.018px;
+    list-style-type: none;
+    background-repeat: no-repeat; 
+}
+
+.tariff_btn {
+    margin-top: 50px;
+    margin-right: 30px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    background-color: #5970FF;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+.tariff_item:last-child .tariff_btn {
+    margin-top: 50px; 
+}
+.tariff_btn_signed {
+    background: #D2D2D2;
+    color: #000;
+}
+
+.tariff_btn:hover,
+.tablecontents_btn:hover {
+    background-color: #3750ee;
+}
+
+.tariff_btn_signed:hover {
+    background: rgba(185, 184, 184, 0.552);
+}
+
+
+/* адаптация */
+@media screen and (max-width: 880px) {
+
+    .tariff_title {
+        font-size: 28px;
+        letter-spacing: 0.28px;
+    }
+
+    .tariff_list {
+        margin-top: 37px;
+    }
+
+}
+
+
